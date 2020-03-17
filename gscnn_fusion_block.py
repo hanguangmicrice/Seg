@@ -54,3 +54,8 @@ class ASPP(nn.Module):
         result = torch.cat((img_edge_features,result), dim=1)
         result = self.conv1(result)
         return result
+
+if __name__ == '__main__':
+    print('load_fusion')
+else:
+    print('load_fusion')

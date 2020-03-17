@@ -133,12 +133,7 @@ class ShapeBlock(nn.Module):
 
         return edge_result        
 
-test = torch.rand((1,3,512,512))
-test = test.cuda()
-net1 = Backbone().cuda()
-net = ShapeBlock().cuda()
-net.eval()
-net1.eval()
-results = net1(test)
-out = net(test,results)
-print(out.shape)
+if __name__ == '__main__':
+    print('load_shape_stream')
+else:
+    print('load_shape_stream')

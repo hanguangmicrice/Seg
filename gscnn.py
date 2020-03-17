@@ -2,9 +2,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F  
 import numpy as np  
-from shapestreamconv import GatedSpatialConv2d
-from back_bone_gscnn import Backbone
-from model.module import ASPP
+from gscnn_back_bone import Backbone
+from gscnn_fusion_block import ASPP
+from gscnn_shape_stream import 
+
 
 class GSCNN(nn.Module):
     def __init__(self,cfg):
